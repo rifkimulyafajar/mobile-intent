@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleExplicitIntent(View view) {
-        Intent i = new Intent(this, ExplicitIntentActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(this, ExplicitIntentActivity.class);
+        startActivity(intent);
     }
 
     public void handleExit(View view) {
@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void handleImpicit(View view) {
         Intent intent = new Intent(this, ImplicitIntentActivity.class);
+        startActivity(intent);
+    }
+
+    public void handleBundle(View view) {
+        Intent intent = new Intent(this, BundleActivity.class);
         startActivity(intent);
     }
 }
